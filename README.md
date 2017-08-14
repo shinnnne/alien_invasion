@@ -1,2 +1,2 @@
 # alien_invasion
-py game
+my first attempt to make a py game
