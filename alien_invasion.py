@@ -2,26 +2,29 @@ import sys
 
 import pygame
 
+from setting import Settings
+from ship import Ship
+import game_functions as gf
+
 def run_game():
-	
+	# åˆå§‹åŒ–pygame è®¾ç½®å’Œå±å¹•å¯¹è±¡
 	pygame.init()
-	screen = pygame.display.set_mode(1200, 800)
+	ai_settings = Settings()
+	screen = pygame.display.set_mode(
+		(ai_settings.screen_width, ai_settings.screen_height))
 	pygame.display.set_caption("Alien Invasion")
 	
-	# ÉèÖÃ±³¾°É«
-	bg_color = (230, 230, 230)
+	# åˆ›å»ºä¸€è‰˜é£èˆ¹
+	ship = Ship(ai_settings, screen)
 	
-	# ¿ªÊ¼ÓÎÏ·µÄÖ÷Ñ­»·
+	# å¼€å§‹æ¸¸æˆçš„ä¸»å¾ªç¯
 	while True:
-		#¼àÌıÊó±êºÍ¼üÅÌÊÂ¼ş
-		for event in pygame.event.get():
-			if event.type == pygame.QUIT:
-				sys.exit()
-		#Ã¿´ÎÑ­»·Ê±¶¼ÖØ»æÆÁÄ»
-		screen.fill(bg_color)
+		#ç›‘å¬é¼ æ ‡å’Œé”®ç›˜äº‹ä»¶
+		gf.check_event(ship)
+		ship.update()
+		gf.update_screen(ai_settings, screen, ship)
 		
-		# ÈÃ×î½ü»æÖÆµÄÆÁÄ»¿É¼û	
-		pygame.display.flip()
 
+		
 run_game()
 			
