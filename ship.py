@@ -24,7 +24,7 @@ class Ship():
 		self.moving_left = False
 		
 		# 飞船的设置
-		self.ship_speed_factor = 0.8
+		self.ship_speed_factor = ai_settings.ship_speed_factor
 		
 	def update(self):
 		'''根据移动标志调整飞船的位置'''
@@ -40,3 +40,7 @@ class Ship():
 	def blitme(self):
 		'''在指定的位置绘制飞船'''
 		self.screen.blit(self.image, self.rect)
+	
+	def center_ship(self):
+		'''让飞船在屏幕上居中'''
+		self.center = self.screen_rect.centerx
