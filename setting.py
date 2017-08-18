@@ -3,7 +3,6 @@ class Settings():
 	
 	def __init__(self):
 		'''初始化游戏的设置'''
-		
 		#屏幕设置
 		self.screen_width = 900
 		self.screen_height = 600
@@ -22,6 +21,13 @@ class Settings():
 		
 		# 外星人设置
 		self.alien_speed_factor = 1
-		self.fleet_drop_speed = 60
+		self.fleet_drop_speed = 30
 		# fleet_direction为1表示向右移，为-1表示向左移
 		self.fleet_direction = 1
+		
+		# 以什么样的速度加快游戏节奏
+		self.speedup_scale = 1.1
+		
+		# 计分
+		self.alien_points = 50
+		
