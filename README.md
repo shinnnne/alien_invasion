@@ -9,4 +9,4 @@
 - 飞船有三条有效生命，右上角计分代表消灭飞船；
 - 所有游戏可变性参数可在setting.py中设置。
 
--my first attempt to make a python project
+practice: my first attempt to make a python project.
