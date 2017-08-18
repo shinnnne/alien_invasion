@@ -1,5 +1,5 @@
-# alien_invasion
-## （《ziwu的飞机大战》- my first attempt to make a python project）
+# 《ziwu的飞机大战》
+
 
 
 ### 游戏规则：
@@ -9,3 +9,4 @@
 - 飞船有三条有效生命，右上角计分代表消灭飞船；
 - 所有游戏可变性参数可在setting.py中设置。
 
+-my first attempt to make a python project
