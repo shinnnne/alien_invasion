@@ -1,5 +1,5 @@
 # alien_invasion
-##（ ziwu的飞机大战- <my first attempt to make a py game> ）
+## （《ziwu的飞机大战》- my first attempt to make a python project）
 
 
 ### 游戏规则：
